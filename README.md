@@ -42,6 +42,12 @@ weighs on the order of 300 pounds.
 I've removed the computer, cleaned the oxidation where it connects to the van,
 and reconnected it; no help. Also cleaned and reconnected other ground wires.
 
+Checked the throttle position sensor for voltage, which should, according to
+one of the videos I watched but didn't note the URL, indicates a functional
+(at least partly) computer. There were 5VDC at points 3 (OR --- Hayes manual
+shows VT/WT) and 2 (OR/DB). Pin 1 (BK/LB) showed no voltage relative to ground.
+All these measurements were with the ignition key in the RUN position.
+
 Wiring diagram of PCM (computer), with C1 to the right as you're looking at it
 from the front of the van:
 ![PCM connector C1](c1_e181c25b035a0ac079c3675bc15a4e60b2457ad4.gif)
@@ -49,5 +55,6 @@ from the front of the van:
 ![PCM connector C3](c3_1686aba26cfd12ff5fe27ea1fe5d29dbb9144111.webp)
 
 [^1]: Automatic Shutdown Relay
-[^2]: Color codes: DG=dark green; OR=orange; DB=dark blue; BK=black; YL=yellow
+[^2]: Color codes: DG=dark green; OR=orange; DB=dark blue; BK=black; YL=yellow;
+      VT=violet; WT=white
 [^3]: Powertrain Control Module, AKA "the computer"
