@@ -42,11 +42,12 @@ weighs on the order of 300 pounds.
 I've removed the computer, cleaned the oxidation where it connects to the van,
 and reconnected it; no help. Also cleaned and reconnected other ground wires.
 
-Checked the throttle position sensor for voltage, which should, according to
-one of the videos I watched but didn't note the URL, indicates a functional
-(at least partly) computer. There were 5VDC at points 3 (OR --- Hayes manual
-shows VT/WT) and 2 (OR/DB). Pin 1 (BK/LB) showed no voltage relative to ground.
-All these measurements were with the ignition key in the RUN position.
+Checked the throttle position sensor, with the ignition key in RUN position,
+for voltage, which should, according to one of the videos I watched but didn't
+note the URL, indicate a (at least partly) function computer.
+There were 5VDC at points 1 (OR --- Hayes manual shows VT/WT, and for pin 3,
+as it has the pin numbers inverted) and 2 (OR/DB).  Pin 3 (BK/LB) showed no
+voltage relative to ground.
 
 Wiring diagram of PCM (computer), with C1 to the right as you're looking at it
 from the front of the van:
