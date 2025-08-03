@@ -24,7 +24,7 @@ nor in the fuse panel behind the driver's door.
 
 The wiring diagram in my Haynes manual shows a dark blue wire going from the
 ignition run/start position to the ASR coil, but that's not the case. Instead
-a red wire goes to the 30A fusible link marked 11 under the cover of the PCM,
+a red wire goes to the 30A fusible link marked 11 under the fuse box cover,
 and a red wire with white stripe comes out the other side, splits into 2, and
 connects to both the coil and common points on the relay. So it doesn't
 require the ignition key at all to get voltage at the relay.
