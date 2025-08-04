@@ -14,7 +14,7 @@ my 12V at the ignition coil.
 
 The code reader, Motopower MP60933, gets the display lit when connected to
 the ODB2 receptacle under the steering wheel, but hitting the VIN or ODB key
-attempts to communicate with the PCM[^3] and fails every time. I tested it with
+attempts to communicate with the PCM[^1] and fails every time. I tested it with
 a much newer Subaru Outback and it works, and the same model connects to
 a Mercury Mountaineer from 2008 or so. So the code reader isn't likely at
 fault. Turning the ignition key to "run" 3 times and waiting for the odometer
@@ -38,36 +38,35 @@ require the ignition key at all to get voltage at the relay.
 I found two of the spark plug connectors not seated properly at the distributor
 cap, but that's unlikely to be relevant. Anyway, they're seated now.
 
-So, even if the computer is replaced, I fail to see how it's going to solve the
-ignition problem. And if anything is wrong with the fuel system, I have no clue
-how to go about fixing it, lacking the location of the relay, and not knowing
-for sure where the fuel pump and filter are; however the best info I've found
-on YouTube University indicates they're both in the fuel tank, which, full,
+If anything is wrong with the fuel system, I have no clue how to go about
+fixing it, lacking the location of the relay, and not knowing for sure where
+the fuel pump and filter are; however the best info I've found on YouTube
+University indicates they're both in the fuel tank, which, full,
 weighs on the order of 300 pounds.
 
 I've removed the computer, cleaned the oxidation where it connects to the van,
 and reconnected it; no help. Also cleaned and reconnected other ground wires.
 
-Checked the throttle position sensor, with the ignition key in RUN position,
+Checked the TPS[^1], with the ignition key in RUN position,
 for voltage, which should, according to one of the videos I watched but didn't
 note the URL, indicate a (at least partly) function computer.
 There were 5VDC at points 1 (OR --- Hayes manual shows VT/WT, and for pin 3,
 as it has the pin numbers inverted) and 2 (OR/DB).  Pin 3 (BK/LB) showed no
 voltage relative to ground.
 
-2025-08-03: Earlier today, disconnected 3 sensors: crankshaft position sensor,
+2025-08-03: Earlier today, disconnected 3 sensors: CPS [^1],
 located just under where the transmission dipstick tube goes into the floor
 of the van; the connector is on the starboard side of the engine block.
-Opposite that, on the port side, is the throttle position sensor. Disconnected
+Opposite that, on the port side, is the TPS. Disconnected
 that too, and on the front of the engine block, whatever that sensor is.
 Immediately after that, I turned the ignition key to "run" position and
 plugged in the sensors in reverse order. After plugging in the one (camshaft
 position sensor? Don't know) on the front of the engine block, I heard a
 whirring behind the instrument cluster, the fuel gauge moved towards full,
 and the "no buS" message was replaced by the odometer reading. Same happened
-after reseating the TPS[^4]. Nothing happened, good or bad, while reconnecting
-the crankshaft position sensor, so I started the van up, and it ran for a
-couple of minutes, then died. Back to "no buS", no start.
+after reseating the TPS. Nothing happened, good or bad, while reconnecting
+the CPS, so I started the van up, and it ran for a couple of minutes,
+then died. Back to "no buS", no start.
 
 Later, I disconnected and reconnected the upright sensor just to port of
 the distributor, turned the key to "run", and saw the gauges working again,
@@ -79,7 +78,8 @@ from the front of the van:
 ![PCM connector C2](c2_7398725575682ba66f8fb8d72197ffdc16fc4d7b.webp)
 ![PCM connector C3](c3_1686aba26cfd12ff5fe27ea1fe5d29dbb9144111.webp)
 
-[^1]: Automatic Shutdown Relay
+[^1]: ASR: Automatic Shutdown Relay, PCM: Powertrain Control Module,
+      AKA "the computer", TPS: Throttle Position Sensor,
+      CPS: Crankshaft Position Sensor
 [^2]: Color codes: DG=dark green; OR=orange; DB=dark blue; BK=black; YL=yellow;
-      VT=violet; WT=white
-[^3]: Powertrain Control Module, AKA "the computer"
+      VT=violet; WT=white, GY=gray
