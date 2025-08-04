@@ -8,7 +8,9 @@ start it a day or two after getting home, it doesn't start.
 Some differences with Vincent's problems: first, bypassing the ASR[^1] relay by
 jumpering pins 3 and 5 of the socket doesn't produce 12V at the DG/OR[^2] wire
 of the ignition coil, and I can't see where the wire goes once it runs
-behind the alternator.
+behind the alternator. But I found out later, I must have jumpered it badly,
+because grounding the other side of the coil pulled in the relay, and I had
+my 12V at the ignition coil.
 
 The code reader, Motopower MP60933, gets the display lit when connected to
 the ODB2 receptacle under the steering wheel, but hitting the VIN or ODB key
@@ -18,6 +20,10 @@ a Mercury Mountaineer from 2008 or so. So the code reader isn't likely at
 fault. Turning the ignition key to "run" 3 times and waiting for the odometer
 to flash results in the "no buS" display and the "check engine" light, followed
 a minute or so later with the "low fuel" light.
+
+Turns out it's totally unnecessary to do the on-off-on-off-on routine. It
+flashes and shows "no buS" after just turning the key to "run", *once*,
+and leaving it there for a minute.
 
 I can't locate the fuel pump relay; it's neither in the engine bay fuse box
 nor in the fuse panel behind the driver's door.
@@ -48,6 +54,24 @@ note the URL, indicate a (at least partly) function computer.
 There were 5VDC at points 1 (OR --- Hayes manual shows VT/WT, and for pin 3,
 as it has the pin numbers inverted) and 2 (OR/DB).  Pin 3 (BK/LB) showed no
 voltage relative to ground.
+
+2025-08-03: Earlier today, disconnected 3 sensors: crankshaft position sensor,
+located just under where the transmission dipstick tube goes into the floor
+of the van; the connector is on the starboard side of the engine block.
+Opposite that, on the port side, is the throttle position sensor. Disconnected
+that too, and on the front of the engine block, whatever that sensor is.
+Immediately after that, I turned the ignition key to "run" position and
+plugged in the sensors in reverse order. After plugging in the one (camshaft
+position sensor? Don't know) on the front of the engine block, I heard a
+whirring behind the instrument cluster, the fuel gauge moved towards full,
+and the "no buS" message was replaced by the odometer reading. Same happened
+after reseating the TPS[^4]. Nothing happened, good or bad, while reconnecting
+the crankshaft position sensor, so I started the van up, and it ran for a
+couple of minutes, then died. Back to "no buS", no start.
+
+Later, I disconnected and reconnected the upright sensor just to port of
+the distributor, turned the key to "run", and saw the gauges working again,
+so took the van downtown where someone else can look at it tomorrow.
 
 Wiring diagram of PCM (computer), with C1 to the right as you're looking at it
 from the front of the van:
